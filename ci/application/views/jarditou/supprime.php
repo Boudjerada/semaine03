@@ -10,7 +10,7 @@ if  (isset ($_SESSION["status"])){
 
             <h1 class="d-flex justify-content-center"><b><?=$produit->pro_libelle?></b></h1>
             <br>
-            <h3 class="d-flex justify-content-center">Etes vous sûr de vouloir supprimer&nbsp<b><?=$produit->pro_libelle?></b>&nbspde la base de données ?<h3>
+            <h6>Etes vous sûr de vouloir supprimer&nbsp<b><?=$produit->pro_libelle?></b>&nbspde la base de données ?<h6>
 
             <br>
             <br>
