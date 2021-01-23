@@ -98,7 +98,7 @@
             </div>
         </form>
     <br>
-    <a href="envoimtp.php">Mot de passe perdu<a>
+    <a href="">Mot de passe perdu<a>
     <br>
     <br>
     <div class="row">

@@ -4,7 +4,7 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class jarditou extends CI_Controller {
+class Jarditou extends CI_Controller {
 
 
     public function index(){
@@ -114,6 +114,7 @@ class jarditou extends CI_Controller {
             if ($this->form_validation->run() == FALSE){
                 $this->load->view('jarditou/index',$aViewHeader);
             }
+            else{
             
             $this->load->model('produitsModel');
             $j = $this->input->post('Log');
@@ -134,11 +135,13 @@ class jarditou extends CI_Controller {
                 $this->load->view('jarditou/index',$aViewHeader);
 
             }
+        }
 
         }
       
         //fin if imput  
         }
+        //formulaire vierge
         else{
            $this->load->view('jarditou/index',$aViewHeader);
         }
