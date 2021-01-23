@@ -40,7 +40,7 @@ if  (isset ($_SESSION["status"])){
                     
                     $total = $total + ($_SESSION["panier"][$i]['pro_qte'] * $_SESSION["panier"][$i]['pro_prix']);
                   ?>
-                    <th class='table-warning'><div>
+                    <th class='table-warning'><div class="d-flex justify-content-center">
                                                 <a href="<?= base_url("index.php/jarditou/supprimerProduit/".$_SESSION["panier"][$i]['pro_id']);?>">Supprimer</a>
                                                 <a class ="btn btn-dark ml-2" href="<?= base_url("index.php/jarditou/ajoutQuantite/".$_SESSION["panier"][$i]['pro_id']);?>">+</a>
                                                 <a class ="btn btn-dark ml-2" href="<?= base_url("index.php/jarditou/diminueQuantite/".$_SESSION["panier"][$i]['pro_id']);?>">-</a>
